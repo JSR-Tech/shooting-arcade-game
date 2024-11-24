@@ -1,0 +1,41 @@
+.leaderboard {
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+}
+
+.leaderboard h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#leaderboard-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 300px;
+    text-align: left;
+}
+
+#leaderboard-list li {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.back-to-home {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.back-to-home:hover {
+    background: #777;
+}

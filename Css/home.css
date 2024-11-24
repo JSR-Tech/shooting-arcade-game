@@ -1,0 +1,87 @@
+
+/* Home container */
+.home {
+
+    position: fixed;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Logo */
+.logo {
+    width: 100%;
+    height: 220px;
+    background: url('../Assets/R.gif') no-repeat center center;
+    background-size: contain;
+    margin-bottom: 30px;
+}
+
+/* Menu */
+.menu {
+    margin: 20px 0;
+}
+
+.menu-button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    background: #ff5733;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.menu-button:hover {
+    background: #c70039;
+}
+
+/* Name Input */
+.name-input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background: #1e1e1e;
+    color: white;
+    transition: border-color 0.3s ease;
+}
+
+.name-input:focus {
+    border-color: #ff5733;
+    outline: none;
+}
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+}
+
+.footer-button {
+    padding: 10px 20px;
+    background: #555;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+.footer-button:hover {
+    background: #888;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <!-- Stylesheets for different sections of the game -->
+    <link rel="stylesheet" href="./Css/style.css"> <!-- General styles -->
+    <link rel="stylesheet" href="./Css/alert.css"> <!-- Custom alert box styles -->
+    <link rel="stylesheet" href="./Css/home.css"> <!-- Home screen styles -->
+    <link rel="stylesheet" href="./Css/restart.css"> <!-- Restart screen styles -->
+    <link rel="stylesheet" href="./Css/learderboard.css"> <!-- Leaderboard styles -->
+</head>
+<body>
+    <!-- Restart screen: Displays the user's score and options to restart or go back home -->
+    <div class="restart">
+        <h1>Your score is: <span class="points"></span></h1> <!-- Displays the score -->
+        <button class="rbtn">Restart</button> <!-- Button to restart the game -->
+        <button class="back" style="margin-left:10px">Home</button> <!-- Button to go back to home -->
+    </div>
+    <span class="points small"></span> <!-- Additional score display for smaller screens -->
+
+    <!-- Custom Alert Box: Used to capture user input (e.g., name) -->
+    <div class="custom-alert">
+        <div class="alert-content">
+            <h2>Enter Your Name</h2> <!-- Prompt for the player's name -->
+            <input type="text" class="name-input" placeholder="Your Name" /> <!-- Input field for name -->
+            <button class="alert-button">Enter</button> <!-- Submit button -->
+            <div>btw!! A mouse is recommended</div> <!-- Additional instruction for players -->
+        </div>
+    </div>
+
+    <!-- Home Screen: Initial interface with options to start the game or view leaderboard -->
+    <div class="home">
+        <div class="logo"></div> <!-- Placeholder for the game's logo -->
+        <div class="menu">
+            <button class="menu-button">Play</button> <!-- Button to start the game -->
+            <button class="menu-button leaderboard-button">Leaderboard</button> <!-- Button to view the leaderboard -->
+        </div>
+        <div class="footer">
+            <button class="footer-button">Mute</button> <!-- Mute button for audio control -->
+        </div>
+    </div>
+
+    <!-- Leaderboard Section: Displays top scores and a back button -->
+    <div class="leaderboard" style="display: none;">
+        <h1>Leaderboard</h1> <!-- Leaderboard title -->
+        <ul id="leaderboard-list"></ul> <!-- List to display leaderboard entries -->
+        <button class="back-to-home">Back</button> <!-- Button to return to the home screen -->
+    </div>
+
+    <!-- Game canvas where graphics or gameplay will be rendered -->
+    <canvas></canvas>
+    
+    <!-- Main game script -->
+    <script src="script.js"></script>
+</body>
+</html>
